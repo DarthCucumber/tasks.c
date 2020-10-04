@@ -226,6 +226,23 @@ void main()
   }
   case 15:
   {
+
+    int c;
+
+    int *pC;
+    printf("::Created pointer vaiable pC::\n");
+
+    pC = &c;
+    printf("::Initialized pointer vaiable pC::\n");
+
+    printf("Enter value of variable c:");
+    scanf("%i",&c);
+
+    printf("::Accessing Value of variable c using pointer variable pC::\n");
+    printf("Value of ch: %i\n",*pC);
+    printf("Address of ch: %p",pC);
+    printf("\n");
+
     break;
   }
   case 16:
@@ -352,7 +369,7 @@ void main()
     printf("::After Swapping::\n");
     printf("a = %d \nb = %d \nc = %d", a, b, c);
     printf("\n");
-    
+
     break;
   }
   case 24:
